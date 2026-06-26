@@ -12,8 +12,9 @@ A tiny, fully‑local macOS menu‑bar app. No login, no admin approval, no baby
 ![Platform](https://img.shields.io/badge/macOS-13%2B-0b0b14?logo=apple)
 ![Universal](https://img.shields.io/badge/binary-Apple%20Silicon%20%2B%20Intel-0b0b14)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/Gtarafdar/auto-afk-slack?style=flat&logo=github&color=0b0b14)](https://github.com/Gtarafdar/auto-afk-slack/stargazers)
 
-[**⬇ Download the latest release**](https://github.com/Gtarafdar/auto-afk-slack/releases/latest)  ·  [**🌐 Landing page**](https://gtarafdar.github.io/auto-afk-slack/)
+[**⬇ Download the latest release**](https://github.com/Gtarafdar/auto-afk-slack/releases/latest)  ·  [**🌐 Landing page**](https://gtarafdar.github.io/auto-afk-slack/)  ·  [**⭐ Star**](https://github.com/Gtarafdar/auto-afk-slack)  ·  [**❤️ Donate**](https://gtarafdar.com/donate)
 
 `macOS 13+` · `Apple Silicon + Intel (universal)` · `≈ 2.4 MB` · `Free & open source (MIT)`
 
@@ -104,6 +105,54 @@ certificate and notarize (below) so Gatekeeper trusts it.
 - **Your routine stays yours** — lunch, focus time and DND are respected.
 - **Multi‑workspace life** — client, company and side‑project Slacks at once; choose where
   AFK applies and leave the rest alone.
+
+## Why I built it
+
+A short break shouldn't turn into a teammate guessing whether you've vanished.
+
+Working with a team, you step away for a few minutes all the time — coffee, a call, a
+quick errand — and you forget to flip your Slack status. So a colleague pings, waits,
+wonders, maybe escalates, when the truth is simply that you weren't at the keyboard.
+
+Auto AFK makes your presence **honest by default**. Lock the lid and your status tells the
+truth; unlock and it steps back. Teammates instantly know whether to expect a reply — and
+if something is genuinely urgent, they can still reach out knowing you're away, not
+ignoring them. No guessing, no “you there?”, no quiet resentment over an unanswered
+message — just a calmer, more transparent way for remote teams to work together, and a
+small nudge toward healthier work boundaries.
+
+## About the maker
+
+<img src="docs/assets/gobinda.png" alt="Gobinda Tarafdar" width="120" align="left" hspace="16" style="border-radius:14px" />
+
+**Gobinda Tarafdar** — WordPress product marketer by trade, stubborn problem-solver by
+habit, lifelong Harry Potter devotee by heart.
+
+By day I'm the Product Marketing Specialist at **[WPBakery](https://wpbakery.com/)** — the
+page builder that quietly powers a sizeable corner of the WordPress universe. Before that,
+I helped a single plugin cross **400,000+ active users** through positioning, user
+research, and a relentless focus on what actually moves the needle. When the day-job owl
+flies home, I tinker on my own little workshop of spells — Auto AFK Slack is one of them.
+
+<br clear="left" />
+
+**Also from the workshop:**
+
+- [**WPBakery**](https://wpbakery.com/) — the page builder I do product marketing for.
+- [**Docscriber**](https://thedocscriber.com/) — documentation, conjured.
+- [**TheRecaller**](https://therecaller.com/) — a memory charm for what you forget online.
+- [**TheEditra**](https://theeditra.com/) — a video-editing cauldron of my own brewing.
+- [**The Quill Press**](https://thequillpress.com/) — tech news styled after the Daily Prophet.
+- [**Costlas**](https://costlas.com/) — cost-of-living for 140 countries & 1,377 cities.
+
+## Support this project
+
+If Auto AFK saves you a tap, here's how to help — all optional, all appreciated:
+
+- ⭐ **[Star it on GitHub](https://github.com/Gtarafdar/auto-afk-slack)** — helps others find it.
+- ❤️ **[Donate](https://gtarafdar.com/donate)** — keeps the workshop lit.
+- 🐦 **[Follow on X / Twitter](https://x.com/Gtarafdarr)**
+- 💼 **[Connect on LinkedIn](https://www.linkedin.com/in/gobinda-tarafdar/)**
 
 ## Requirements
 
