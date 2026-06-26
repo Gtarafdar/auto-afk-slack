@@ -7,9 +7,15 @@
 **Lock your Mac → your Slack status goes AFK. Unlock → it clears.**
 A tiny, fully‑local macOS menu‑bar app. No login, no admin approval, no babysitting.
 
-[**⬇ Download the latest .dmg**](docs/downloads/AutoAFK-1.0.dmg)  ·  [**🌐 Landing page**](https://gtarafdar.github.io/auto-afk-slack/)
+[![Latest release](https://img.shields.io/github/v/release/Gtarafdar/auto-afk-slack?label=download&logo=apple&color=0b0b14)](https://github.com/Gtarafdar/auto-afk-slack/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Gtarafdar/auto-afk-slack/total?color=0b0b14)](https://github.com/Gtarafdar/auto-afk-slack/releases)
+![Platform](https://img.shields.io/badge/macOS-13%2B-0b0b14?logo=apple)
+![Universal](https://img.shields.io/badge/binary-Apple%20Silicon%20%2B%20Intel-0b0b14)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-`macOS 13+` · `Apple Silicon + Intel (universal)` · `≈ 2.4 MB` · `Free & open source`
+[**⬇ Download the latest release**](https://github.com/Gtarafdar/auto-afk-slack/releases/latest)  ·  [**🌐 Landing page**](https://gtarafdar.github.io/auto-afk-slack/)
+
+`macOS 13+` · `Apple Silicon + Intel (universal)` · `≈ 2.4 MB` · `Free & open source (MIT)`
 
 </div>
 
@@ -111,7 +117,7 @@ certificate and notarize (below) so Gatekeeper trusts it.
 
 ## Install
 
-1. Download and open [`AutoAFK-1.0.dmg`](docs/downloads/AutoAFK-1.0.dmg).
+1. Download the latest [`AutoAFK-*.dmg`](https://github.com/Gtarafdar/auto-afk-slack/releases/latest) and open it.
 2. Drag **Auto AFK Slack** into **Applications**.
 3. First launch: right‑click the app → **Open** (it's ad‑hoc signed, so Gatekeeper asks
    once).
@@ -163,6 +169,10 @@ The `xoxc` token + `d` cookie are unofficial and outside Slack's supported API s
 They can rotate/expire — the app re‑reads them from the Slack desktop app automatically,
 or you can pick **Refresh local session** from the menu. This approach is used
 specifically to keep everything local and avoid Slack app‑install / admin approval.
+
+## License
+
+[MIT](LICENSE) © Gobinda Tarafdar.
 
 ---
 
