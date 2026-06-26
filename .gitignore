@@ -1,0 +1,7 @@
+.build/
+dist/
+.swiftpm/
+*.xcodeproj
+DerivedData/
+AutoAFK.zip
+.DS_Store

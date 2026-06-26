@@ -1,0 +1,69 @@
+/* Auto AFK Slack — design tokens (Midnight · atmospheric)
+ * paper-band: dark (L 14%) · display: Bricolage Grotesque · accent-hue: warm amber (~75)
+ */
+:root {
+  /* Type families */
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Switzer", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Colour — midnight, cool neutrals (hue 260), one warm accent (hue 75) */
+  --color-paper:    oklch(14% 0.012 260);
+  --color-paper-2:  oklch(17% 0.014 260);
+  --color-paper-3:  oklch(21% 0.016 260);
+  --color-rule:     oklch(31% 0.012 260);
+  --color-rule-2:   oklch(26% 0.012 260);
+  --color-neutral:  oklch(63% 0.012 260);
+  --color-muted:    oklch(76% 0.010 260);
+  --color-ink:      oklch(96% 0.006 250);
+  --color-accent:   oklch(81% 0.130 75);
+  --color-accent-ink: oklch(20% 0.04 75);
+  --color-focus:    oklch(83% 0.140 75);
+  --color-glow:     oklch(81% 0.130 75 / 0.16);
+
+  /* Spacing — 4pt scale */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  /* Type scale — 1.25 major third */
+  --text-xs:   0.8rem;
+  --text-sm:   0.9rem;
+  --text-base: 1rem;
+  --text-md:   1.25rem;
+  --text-lg:   1.5625rem;
+  --text-xl:   1.9531rem;
+  --text-2xl:  2.4414rem;
+  --text-3xl:  3.0518rem;
+  --text-display:   clamp(2.6rem, 5vw + 1rem, 4.9rem);
+  --text-display-s: clamp(2rem, 3vw + 1rem, 3.2rem);
+
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.375rem;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-short: 140ms;
+  --dur-mid: 280ms;
+  --dur-long: 620ms;
+
+  /* Elevation z-scale */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-nav: 100;
+  --z-top: 1000;
+
+  --rule: 1px solid var(--color-rule);
+  --measure: 64ch;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto AFK Slack — lock your Mac, Slack goes AFK</title>
+  <meta name="description" content="A lightweight macOS menu-bar app that sets your Slack status to AFK when your Mac locks and clears it when you unlock. Fully local, respects your manual status and Do Not Disturb, multi-workspace, no admin needed." />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Auto AFK Slack" />
+  <meta property="og:description" content="Lock your Mac, your Slack status goes AFK — and clears when you're back. Fully local, no admin, respects manual status & DND." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/icon.png" />
+
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- ====== NAV ====== -->
+  <header class="shell">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav__inner">
+        <a class="brand" href="#top">
+          <img src="assets/icon.png" alt="" width="28" height="28" />
+          Auto&nbsp;AFK
+        </a>
+        <div class="nav__links">
+          <a href="#how">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#security">Security</a>
+          <a href="#requirements">Requirements</a>
+        </div>
+        <div class="nav__cta">
+          <a class="btn btn--primary" href="downloads/AutoAFK-1.0.dmg" download>Download</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="shell">
+    <!-- ====== HERO (Workbench) ====== -->
+    <section class="hero">
+      <div>
+        <span class="hero__kicker"><span class="dot" aria-hidden="true"></span> macOS menu-bar app · fully local</span>
+        <h1>Lock your Mac.<br />Slack goes <em>AFK</em>.</h1>
+        <p class="hero__lede">
+          The moment your screen locks, your Slack status flips to away — with your
+          message, emoji and timer. Unlock, and it clears itself. No login, no admin,
+          no babysitting.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="downloads/AutoAFK-1.0.dmg" download>
+            Download for macOS <span class="btn__sub">· .dmg · 2.4&nbsp;MB</span>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#how">See how it works</a>
+        </div>
+        <div class="hero__meta">
+          <span><b>Universal</b> — Apple Silicon + Intel</span>
+          <span><b>macOS 13+</b></span>
+          <span><b>Free</b> &amp; open</span>
+        </div>
+      </div>
+
+      <figure class="shot hero__figure">
+        <img src="assets/shot-settings.png" alt="Auto AFK Slack menu-bar panel showing workspace checkboxes, AFK message, emoji picker, and a custom clear timer." width="413" height="798" fetchpriority="high" />
+        <figcaption>Everything lives in one small menu-bar panel.</figcaption>
+      </figure>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ====== HOW IT WORKS ====== -->
+    <section class="section" id="how">
+      <div class="section__head reveal">
+        <h2 class="section-title">Three moments, zero effort</h2>
+        <p class="lede">Install it once. After that it just mirrors what you already do — lock, step away, come back.</p>
+      </div>
+
+      <ol class="steps reveal">
+        <li class="step">
+          <span class="step__n">01</span>
+          <h3>Install &amp; it self-connects</h3>
+          <p>On first launch it reads the Slack session already on your Mac from the desktop app. No password, no OAuth screen, no workspace admin approval.</p>
+        </li>
+        <li class="step">
+          <span class="step__n">02</span>
+          <h3>You lock your Mac</h3>
+          <p>Manual lock or auto idle-lock — it sets your AFK message + emoji on the workspaces you chose, with the expiry timer you picked.</p>
+        </li>
+        <li class="step">
+          <span class="step__n">03</span>
+          <h3>You unlock — it clears</h3>
+          <p>Back at the keyboard, your status is removed instantly, overriding the timer — exactly like cancelling a status by hand.</p>
+        </li>
+      </ol>
+
+      <div class="tour">
+        <div class="tour__figs reveal">
+          <figure class="shot">
+            <img src="assets/shot-afk-active.png" alt="The app showing AFK active with the custom message 'AFK - from AFK APP'." width="387" height="790" loading="lazy" />
+            <figcaption>AFK active in the app</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shot-slack-status.png" alt="Slack profile menu showing the AFK status set automatically." width="300" height="309" loading="lazy" />
+            <figcaption>…and live in Slack</figcaption>
+          </figure>
+        </div>
+        <div class="tour__copy reveal">
+          <h3>Honest presence — without stepping on your day</h3>
+          <p>Your teammates see you're away on every device, including the Slack mobile app, because the status lives on Slack's servers, not just your Mac.</p>
+          <p>And it stays out of your way: if <strong>you</strong> set a status — “Lunch”, “In a meeting” — or you're on <strong>Do&nbsp;Not&nbsp;Disturb</strong> or snooze, Auto&nbsp;AFK leaves it untouched. It only ever clears a status it set itself.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ====== FEATURES ====== -->
+    <section class="section" id="features">
+      <div class="section__head reveal">
+        <h2 class="section-title">Small app, thoughtful behaviour</h2>
+      </div>
+
+      <div class="features reveal">
+        <article class="feat feat--lead">
+          <span class="feat__tag">Automatic</span>
+          <h3>Lock-aware status</h3>
+          <p>Sets AFK on lock, clears on unlock. The one job it does, it does reliably — no menu-bar fiddling, no shortcuts to remember.</p>
+        </article>
+        <article class="feat feat--wide">
+          <span class="feat__tag">Respectful</span>
+          <h3>Never overwrites your own status</h3>
+          <p>Set “Lunch” or “On a call” yourself and lock the Mac for its idle timer? Your status is preserved — not replaced, not wiped on unlock.</p>
+        </article>
+
+        <article class="feat">
+          <span class="feat__tag">Quiet</span>
+          <h3>Respects DND &amp; snooze</h3>
+          <p>If a workspace is in Do Not Disturb or snoozed, it's skipped entirely.</p>
+        </article>
+        <article class="feat">
+          <span class="feat__tag">Timing</span>
+          <h3>Custom auto-clear</h3>
+          <p>Slack's presets — 30&nbsp;min, 1&nbsp;hour, today, this week — plus your own custom minutes.</p>
+        </article>
+        <article class="feat">
+          <span class="feat__tag">Scope</span>
+          <h3>Pick your workspaces</h3>
+          <p>Apply AFK to one workspace or several — tick exactly where it should act.</p>
+        </article>
+
+        <article class="feat feat--wide">
+          <span class="feat__tag">Effortless setup</span>
+          <h3>Grabs every workspace for you</h3>
+          <p>It reads all the workspaces you're already signed into in the Slack app — every one across your working life — so you never hunt for tokens. Just tick the ones you want.</p>
+        </article>
+        <article class="feat feat--wide">
+          <span class="feat__tag">No strings</span>
+          <h3>No connect, no admin, no IT ticket</h3>
+          <p>It doesn't install a Slack app or ask a workspace owner for approval. It reuses the session already on your Mac, so it works globally on personal and company workspaces alike.</p>
+        </article>
+
+        <article class="feat">
+          <span class="feat__tag">Light</span>
+          <h3>Featherweight</h3>
+          <p>Event-driven — it sleeps until your screen locks. No polling loop chewing your battery or RAM.</p>
+        </article>
+        <article class="feat">
+          <span class="feat__tag">Set &amp; forget</span>
+          <h3>Runs every day</h3>
+          <p>One-time install, optional launch at login. It keeps working without restarts.</p>
+        </article>
+        <article class="feat">
+          <span class="feat__tag">Native</span>
+          <h3>Universal &amp; tidy</h3>
+          <p>One binary for Apple&nbsp;Silicon and Intel. Menu-bar only — no Dock icon, custom message &amp; emoji.</p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ====== SECURITY ====== -->
+    <section class="section" id="security">
+      <div class="secure">
+        <div class="section__head reveal" style="margin-bottom:0">
+          <h2 class="section-title">Local by design, safe by default</h2>
+          <p class="lede">Your Slack session is sensitive, so the app is built to keep it on your machine and out of harm's way.</p>
+        </div>
+
+        <div class="secure__list reveal">
+          <div class="secure__item">
+            <svg class="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            <div>
+              <h3>Everything stays on your Mac</h3>
+              <p>The app talks only to slack.com over HTTPS — the same thing the official client does. No analytics, no telemetry, no third-party servers.</p>
+            </div>
+          </div>
+          <div class="secure__item">
+            <svg class="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <div>
+              <h3>Secrets live only in your Keychain</h3>
+              <p>The Slack cookie and tokens are stored in a single Keychain item marked <em>this-device-only</em>, so they never sync to iCloud. Nothing sensitive touches disk or preferences.</p>
+            </div>
+          </div>
+          <div class="secure__item">
+            <svg class="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10"/><circle cx="19" cy="19" r="2.4"/></svg>
+            <div>
+              <h3>No secrets in logs</h3>
+              <p>Tokens, cookies and your status text are never written to the system log. Verbose diagnostics are off by default.</p>
+            </div>
+          </div>
+          <div class="secure__item">
+            <svg class="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>
+            <div>
+              <h3>One local permission, easy to revoke</h3>
+              <p>A one-time macOS Keychain “Allow” — a local OS permission, not a login or admin approval. Hit <strong>Disconnect</strong> any time, or sign out of all sessions in Slack.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout reveal">
+        The code was put through an automated security review — <strong>no critical, high, or medium findings</strong>. Hardening includes <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code> Keychain storage, secret-free logging, and bounds-checked parsing of local files. The app is not sandboxed (it needs to read the Slack desktop app's local session); distribute it with a Developer&nbsp;ID signature + notarization so Gatekeeper trusts it.
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ====== BENEFITS ====== -->
+    <section class="section">
+      <div class="section__head reveal">
+        <h2 class="section-title">Made for how remote teams actually work</h2>
+        <p class="lede">Presence is a courtesy to your teammates. This makes it automatic, so nobody has to wonder whether you're there.</p>
+      </div>
+
+      <div class="benefits reveal">
+        <div class="benefit">
+          <span class="benefit__mark">→</span>
+          <div>
+            <h3>Fewer “you there?” pings</h3>
+            <p>Stepped away from the desk? Teammates see it the second you lock — across desktop and the Slack mobile app.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <span class="benefit__mark">→</span>
+          <div>
+            <h3>Zero discipline required</h3>
+            <p>You already lock your Mac when you leave. Accurate presence becomes a side effect of a habit you already have.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <span class="benefit__mark">→</span>
+          <div>
+            <h3>Your routine stays yours</h3>
+            <p>Lunch breaks, focus time, DND — all respected. The app never hijacks a status you cared enough to set.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <span class="benefit__mark">→</span>
+          <div>
+            <h3>Built for multi-workspace life</h3>
+            <p>Client, company and side-project Slacks at once — choose exactly where AFK applies and leave the rest alone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ====== REQUIREMENTS / INSTALL ====== -->
+    <section class="section" id="requirements">
+      <div class="section__head reveal">
+        <h2 class="section-title">What you need</h2>
+      </div>
+
+      <div class="reqs">
+        <dl class="spec reveal">
+          <div class="spec__row"><dt>macOS</dt><dd>13.0 Ventura or later</dd></div>
+          <div class="spec__row"><dt>Chip</dt><dd>Apple Silicon or Intel (universal binary)</dd></div>
+          <div class="spec__row"><dt>Slack</dt><dd>Desktop app installed &amp; signed in</dd></div>
+          <div class="spec__row"><dt>Download</dt><dd>≈ 2.4&nbsp;MB · .dmg</dd></div>
+          <div class="spec__row"><dt>Price</dt><dd>Free &amp; open source</dd></div>
+        </dl>
+
+        <div class="reveal">
+          <pre class="code"><span class="c"># 1.</span> Download and open <b>AutoAFK-1.0.dmg</b>
+<span class="c"># 2.</span> Drag <b>Auto AFK Slack</b> into Applications
+<span class="c"># 3.</span> First launch: right-click the app → <b>Open</b>
+<span class="c">#    </span>(it's ad-hoc signed, so Gatekeeper asks once)
+<span class="c"># 4.</span> Approve the one-time Keychain <b>Allow</b> prompt
+<span class="c"># 5.</span> Click the menu-bar moon → tick your workspaces</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== DOWNLOAD CTA ====== -->
+    <section class="section--tight">
+      <div class="download reveal">
+        <h2>Get your evenings back.</h2>
+        <p>Install once and never think about your Slack status again. It'll be right there, every time you lock the lid.</p>
+        <div class="download__actions">
+          <a class="btn btn--primary btn--lg" href="downloads/AutoAFK-1.0.dmg" download>Download for macOS</a>
+          <a class="btn btn--ghost btn--lg" href="https://github.com/OWNER/auto-afk-slack">View source on GitHub</a>
+        </div>
+        <p class="download__note">Universal · macOS 13+ · ad-hoc signed · 2.4&nbsp;MB</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="shell">
+      <div class="footer__inner">
+        <p class="footer__statement">Lock the lid. Let your team know. Get on with your life.</p>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="#how">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#security">Security</a>
+          <a href="downloads/AutoAFK-1.0.dmg" download>Download</a>
+          <a href="https://github.com/OWNER/auto-afk-slack">GitHub</a>
+        </nav>
+      </div>
+      <p class="footer__fine">Auto AFK Slack · runs fully on your Mac · talks only to slack.com. Slack is a trademark of Slack Technologies; this project is independent and unofficial.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
