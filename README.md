@@ -7,7 +7,7 @@
 **Lock your Mac → your Slack status goes AFK. Unlock → it clears.**
 A tiny, fully‑local macOS menu‑bar app. No login, no admin approval, no babysitting.
 
-[**⬇ Download the latest .dmg**](docs/downloads/AutoAFK-1.0.dmg)  ·  [**🌐 Landing page**](https://OWNER.github.io/auto-afk-slack/)
+[**⬇ Download the latest .dmg**](docs/downloads/AutoAFK-1.0.dmg)  ·  [**🌐 Landing page**](https://gtarafdar.github.io/auto-afk-slack/)
 
 `macOS 13+` · `Apple Silicon + Intel (universal)` · `≈ 2.4 MB` · `Free & open source`
 
@@ -150,16 +150,12 @@ xcrun stapler staple "dist/Auto AFK Slack.app"
 
 ## Landing page (GitHub Pages)
 
-A full landing page lives in [`docs/`](docs/). To publish it:
+A full landing page lives in [`docs/`](docs/) and is published with GitHub Pages at:
 
-1. Push this repo to GitHub.
-2. **Settings → Pages → Build and deployment → Deploy from a branch.**
-3. Branch: `main`, folder: **`/docs`**. Save.
-4. Your site goes live at `https://OWNER.github.io/auto-afk-slack/`.
+**<https://gtarafdar.github.io/auto-afk-slack/>**
 
-> Replace `OWNER` / `auto-afk-slack` throughout this README and in
-> `docs/index.html` (the two `github.com/OWNER/...` links) with your actual GitHub
-> username and repository name.
+It serves from the `main` branch `/docs` folder (Settings → Pages → Deploy from a
+branch → `main` → `/docs`).
 
 ## Caveats
 
